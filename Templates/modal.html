@@ -1,199 +1,103 @@
-<div id="signin" class="modal fade text-center modal" role="dialog" tabindex="-1" data-bs-backdrop="static"
-    data-bs-keyboard="false">
+<div id="signin" class="modal fade text-center modal" role="dialog" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
     <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" style="filter: sepia(50%);">Sign-in</h4><button class="btn-close" type="button"
-                    aria-label="Close" data-bs-dismiss="modal"></button>
+                <h4 class="modal-title" style="filter: sepia(50%);">Sign-in</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body"><label class="form-label">Continue with</label>
-                <div class="text-center flex-row justify-content-evenly" style="overflow: hidden;margin-bottom: 8px;">
-                    <button id="sign-in-apple" class="btn btn-outline-primary link-secondary" type="button"
-                        style="margin: 4px;"><svg class="bi bi-apple" xmlns="http://www.w3.org/2000/svg" width="1em"
-                            height="1em" fill="currentColor" viewBox="0 0 16 16" style="height: 24px;width: 24px;">
-                            <path
-                                d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z">
+                <div class="text-center flex-row justify-content-evenly" style="overflow: hidden;margin-bottom: 8px;"><button id="sign-in-apple" class="btn btn-outline-primary link-secondary" type="button" style="margin: 4px;"><svg class="bi bi-apple" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="height: 24px;width: 24px;">
+                            <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z">
                             </path>
-                            <path
-                                d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z">
+                            <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z">
                             </path>
-                        </svg></button><button id="sign-in-google" class="btn btn-outline-primary link-secondary"
-                        type="button" style="margin: 4px;"><svg class="bi bi-google" xmlns="http://www.w3.org/2000/svg"
-                            width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16"
-                            style="height: 24px;width: 24px;">
-                            <path
-                                d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z">
+                        </svg></button><button id="sign-in-google" class="btn btn-outline-primary link-secondary" type="button" style="margin: 4px;"><svg class="bi bi-google" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="height: 24px;width: 24px;">
+                            <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z">
                             </path>
-                        </svg></button><button id="sign-in-facebook" class="btn btn-outline-primary link-secondary"
-                        type="button" style="margin: 4px;"><svg class="bi bi-facebook"
-                            xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
-                            viewBox="0 0 16 16" style="height: 24px;width: 24px;">
-                            <path
-                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951">
+                        </svg></button><button id="sign-in-facebook" class="btn btn-outline-primary link-secondary" type="button" style="margin: 4px;"><svg class="bi bi-facebook" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="height: 24px;width: 24px;">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951">
                             </path>
-                        </svg></button><button id="sign-in-microsoft" class="btn btn-outline-primary link-secondary"
-                        type="button" style="margin: 4px;"><svg class="bi bi-microsoft"
-                            xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
-                            viewBox="0 0 16 16" style="height: 24px;width: 24px;">
-                            <path
-                                d="M7.462 0H0v7.19h7.462zM16 0H8.538v7.19H16zM7.462 8.211H0V16h7.462zm8.538 0H8.538V16H16z">
+                        </svg></button><button id="sign-in-microsoft" class="btn btn-outline-primary link-secondary" type="button" style="margin: 4px;"><svg class="bi bi-microsoft" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="height: 24px;width: 24px;">
+                            <path d="M7.462 0H0v7.19h7.462zM16 0H8.538v7.19H16zM7.462 8.211H0V16h7.462zm8.538 0H8.538V16H16z">
                             </path>
-                        </svg></button>
-                </div><label class="form-label">or </label>
+                        </svg></button></div><label class="form-label">or </label>
                 <form id="form-sign-in" class="form">
                     <div>
-                        <div class="input-group" style="margin-bottom: 8px;"><span
-                                class="text-secondary input-group-text"><svg class="bi bi-envelope-at-fill"
-                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
-                                    viewBox="0 0 16 16"
-                                    style="width: 24px;height: 24px;filter: sepia(0%);opacity: 0.75;">
-                                    <path
-                                        d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671">
+                        <div class="input-group" style="margin-bottom: 8px;"><span class="text-secondary input-group-text"><svg class="bi bi-envelope-at-fill" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="width: 24px;height: 24px;filter: sepia(0%);opacity: 0.75;">
+                                    <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671">
                                     </path>
-                                    <path
-                                        d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z">
+                                    <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z">
                                     </path>
-                                </svg></span><input class="form-control" type="email" required
-                                placeholder="E-mail address" name="signin-input-email"
-                                pattern="[a-z0-9!#$%&amp;&#39;*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;&#39;*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
-                                inputmode="email" /></div>
-                        <div class="input-group" style="margin-bottom: 8px;"><span
-                                class="text-secondary input-group-text"><svg class="bi bi-lock"
-                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
-                                    viewBox="0 0 16 16"
-                                    style="width: 24px;height: 24px;filter: sepia(0%);opacity: 0.75;">
-                                    <path
-                                        d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2M5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1">
+                                </svg></span><input class="form-control" type="email" required placeholder="E-mail address" name="signin-input-email" pattern="[a-z0-9!#$%&amp;&#39;*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;&#39;*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" inputmode="email" /></div>
+                        <div class="input-group" style="margin-bottom: 8px;"><span class="text-secondary input-group-text"><svg class="bi bi-lock" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="width: 24px;height: 24px;filter: sepia(0%);opacity: 0.75;">
+                                    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2M5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1">
                                     </path>
-                                </svg></span><input class="form-control" type="password" required placeholder="Password"
-                                name="signin-input-password" minlength="8" /></div>
-                        <div class="form-check text-start"><input id="formCheck-2" class="form-check-input"
-                                type="checkbox" required name="signup-input-agree" /><label class="form-check-label"
-                                for="formCheck-2">Remember me<a data-bs-toggle="tooltip" data-bss-tooltip href="#"
-                                    style="margin-left: 47px;" title="Cick to reset password">Forgot
-                                    password</a></label></div><button id="sign-up-btn-sign-up-1"
-                            class="btn btn-primary btn-lg w-100 mb-2 rounded-3" type="submit"
-                            style="margin-top: 16px;">Sign-in</button>
+                                </svg></span><input class="form-control" type="password" required placeholder="Password" name="signin-input-password" minlength="8" /></div>
+                        <div class="form-check text-start"><input id="formCheck-2" class="form-check-input" type="checkbox" required name="signup-input-agree" /><label class="form-check-label" for="formCheck-2">Remember me<a data-bs-toggle="tooltip" data-bss-tooltip href="#" style="margin-left: 47px;" title="Cick to reset password">Forgot
+                                    password</a></label></div><button id="sign-up-btn-sign-up-1" class="btn btn-primary btn-lg w-100 mb-2 rounded-3" type="submit" style="margin-top: 16px;">Sign-in</button>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <div class="text-start"><label class="form-label text-start"
-                        style="margin-right: 14px;padding-right: 15px;">Don&#39;t have an
-                        account?</label><button id="back-to-sign-up" class="btn btn-outline-secondary close-modal" type
-                        data-bs-dismiss data-bs-target="#signup" data-bs-toggle="modal">Sign-up</button></div>
+                <div class="text-start"><label class="form-label text-start" style="margin-right: 14px;padding-right: 15px;">Don&#39;t have an
+                        account?</label><button id="back-to-sign-up" class="btn btn-outline-secondary close-modal" type data-bs-dismiss data-bs-target="#signup" data-bs-toggle="modal">Sign-up</button></div>
             </div>
         </div>
     </div>
 </div>
-<div id="signup" class="modal fade text-center modal" role="dialog" tabindex="-1" data-bs-backdrop="static"
-    data-bs-keyboard="false">
+<div id="signup" class="modal fade text-center modal" role="dialog" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
     <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h2 class="modal-title fs-4" style="filter: sepia(50%);">Create an account</h2><button class="btn-close"
-                    type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                <h2 class="modal-title fs-4" style="filter: sepia(50%);">Create an account</h2><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body"><label class="form-label">Continue with</label>
                 <form id="form_sign_up" class="form">
-                    <div id="social-share" class="text-center flex-row justify-content-evenly"
-                        style="overflow: hidden;margin-bottom: 8px;"><button id="sign-up-apple"
-                            class="btn btn-outline-primary link-secondary" type="button" style="margin: 4px;"><svg
-                                class="bi bi-apple" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                                fill="currentColor" viewBox="0 0 16 16" style="height: 24px;width: 24px;">
-                                <path
-                                    d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z">
+                    <div id="social-share" class="text-center flex-row justify-content-evenly" style="overflow: hidden;margin-bottom: 8px;"><button id="sign-up-apple" class="btn btn-outline-primary link-secondary" type="button" style="margin: 4px;"><svg class="bi bi-apple" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="height: 24px;width: 24px;">
+                                <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z">
                                 </path>
-                                <path
-                                    d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z">
+                                <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z">
                                 </path>
-                            </svg></button><button id="sign-up-google" class="btn btn-outline-primary link-secondary"
-                            type="button" style="margin: 4px;"><svg class="bi bi-google"
-                                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
-                                viewBox="0 0 16 16" style="height: 24px;width: 24px;">
-                                <path
-                                    d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z">
+                            </svg></button><button id="sign-up-google" class="btn btn-outline-primary link-secondary" type="button" style="margin: 4px;"><svg class="bi bi-google" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="height: 24px;width: 24px;">
+                                <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z">
                                 </path>
-                            </svg></button><button id="sign-up-facebook" class="btn btn-outline-primary link-secondary"
-                            type="button" style="margin: 4px;"><svg class="bi bi-facebook"
-                                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
-                                viewBox="0 0 16 16" style="height: 24px;width: 24px;">
-                                <path
-                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951">
+                            </svg></button><button id="sign-up-facebook" class="btn btn-outline-primary link-secondary" type="button" style="margin: 4px;"><svg class="bi bi-facebook" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="height: 24px;width: 24px;">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951">
                                 </path>
-                            </svg></button><button id="sign-up-microsoft" class="btn btn-outline-primary link-secondary"
-                            type="button" style="margin: 4px;"><svg class="bi bi-microsoft"
-                                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
-                                viewBox="0 0 16 16" style="height: 24px;width: 24px;">
-                                <path
-                                    d="M7.462 0H0v7.19h7.462zM16 0H8.538v7.19H16zM7.462 8.211H0V16h7.462zm8.538 0H8.538V16H16z">
+                            </svg></button><button id="sign-up-microsoft" class="btn btn-outline-primary link-secondary" type="button" style="margin: 4px;"><svg class="bi bi-microsoft" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="height: 24px;width: 24px;">
+                                <path d="M7.462 0H0v7.19h7.462zM16 0H8.538v7.19H16zM7.462 8.211H0V16h7.462zm8.538 0H8.538V16H16z">
                                 </path>
                             </svg></button></div><label class="form-label">or </label>
                     <div>
-                        <div class="input-group" style="margin-bottom: 8px;margin-top: 8px;"><span
-                                class="text-secondary input-group-text"><svg class="bi bi-person-fill"
-                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
-                                    viewBox="0 0 16 16"
-                                    style="width: 24px;height: 24px;filter: sepia(0%);opacity: 0.75;">
+                        <div class="input-group" style="margin-bottom: 8px;margin-top: 8px;"><span class="text-secondary input-group-text"><svg class="bi bi-person-fill" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="width: 24px;height: 24px;filter: sepia(0%);opacity: 0.75;">
                                     <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6">
                                     </path>
-                                </svg></span><input id="sign-up-fullname" class="form-control" type="text"
-                                name="signup-input-fullname" placeholder="Full name" required /></div>
-                        <div class="input-group" style="margin-bottom: 8px;"><span
-                                class="text-secondary input-group-text"><svg class="bi bi-envelope-at-fill"
-                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
-                                    viewBox="0 0 16 16"
-                                    style="width: 24px;height: 24px;filter: sepia(0%);opacity: 0.75;">
-                                    <path
-                                        d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671">
+                                </svg></span><input id="sign-up-fullname" class="form-control" type="text" name="signup-input-fullname" placeholder="Full name" required /></div>
+                        <div class="input-group" style="margin-bottom: 8px;"><span class="text-secondary input-group-text"><svg class="bi bi-envelope-at-fill" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="width: 24px;height: 24px;filter: sepia(0%);opacity: 0.75;">
+                                    <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671">
                                     </path>
-                                    <path
-                                        d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z">
+                                    <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z">
                                     </path>
-                                </svg></span><input id="sign-up-email" class="form-control" type="email" required
-                                placeholder="E-mail address" name="signup-input-email"
-                                pattern="[a-z0-9!#$%&amp;&#39;*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;&#39;*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" />
+                                </svg></span><input id="sign-up-email" class="form-control" type="email" required placeholder="E-mail address" name="signup-input-email" pattern="[a-z0-9!#$%&amp;&#39;*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;&#39;*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" />
                         </div>
-                        <div class="input-group" style="margin-bottom: 8px;"><span
-                                class="text-secondary input-group-text"><svg class="bi bi-lock"
-                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
-                                    viewBox="0 0 16 16"
-                                    style="width: 24px;height: 24px;filter: sepia(0%);opacity: 0.75;">
-                                    <path
-                                        d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2M5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1">
+                        <div class="input-group" style="margin-bottom: 8px;"><span class="text-secondary input-group-text"><svg class="bi bi-lock" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="width: 24px;height: 24px;filter: sepia(0%);opacity: 0.75;">
+                                    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2M5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1">
                                     </path>
-                                </svg></span><input id="sign-up-password1" class="form-control" type="password" required
-                                placeholder="Create a password (min. 8 characters)" name="signup-input-password1"
-                                minlength="8" /></div>
-                        <div class="input-group" style="margin-bottom: 8px;"><span
-                                class="text-secondary input-group-text"><svg class="bi bi-lock-fill"
-                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
-                                    viewBox="0 0 16 16"
-                                    style="width: 24px;height: 24px;filter: sepia(0%);opacity: 0.75;">
-                                    <path
-                                        d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2">
+                                </svg></span><input id="sign-up-password1" class="form-control" type="password" required placeholder="Create a password (min. 8 characters)" name="signup-input-password1" minlength="8" /></div>
+                        <div class="input-group" style="margin-bottom: 8px;"><span class="text-secondary input-group-text"><svg class="bi bi-lock-fill" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="width: 24px;height: 24px;filter: sepia(0%);opacity: 0.75;">
+                                    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2">
                                     </path>
-                                </svg></span><input id="sign-up-password2" class="form-control" type="password" required
-                                placeholder="Repeat Password" name="signup-input-password2" minlength="8"
-                                maxlength="16" /></div>
-                        <div class="form-check text-start"><input id="chk-agree-all" class="form-check-input"
-                                type="checkbox" required name="signup-input-agree" /><label class="form-check-label"
-                                for="formCheck-1" style="padding-right: 0px;margin-right: 7px;">I agree
-                                with <a data-bs-toggle="tooltip" data-bss-tooltip href="#"
-                                    title="Click to read our Terms &amp; Conditions, Terms of Use and Privacy Policy">all
+                                </svg></span><input id="sign-up-password2" class="form-control" type="password" required placeholder="Repeat Password" name="signup-input-password2" minlength="8" maxlength="16" /></div>
+                        <div class="form-check text-start"><input id="chk-agree-all" class="form-check-input" type="checkbox" required name="signup-input-agree" /><label class="form-check-label" for="formCheck-1" style="padding-right: 0px;margin-right: 7px;">I agree
+                                with <a data-bs-toggle="tooltip" data-bss-tooltip href="#" title="Click to read our Terms &amp; Conditions, Terms of Use and Privacy Policy">all
                                     terms</a></label></div>
                     </div>
-                    <div class="text-center flex-row"></div><button id="sign-up-btn-sign-up"
-                        class="btn btn-primary btn-lg w-100 mb-2 rounded-3" type="submit"
-                        style="margin-top: 16px;">Sign-up</button>
+                    <div class="text-center flex-row"></div><button id="sign-up-btn-sign-up" class="btn btn-primary btn-lg w-100 mb-2 rounded-3" type="submit" style="margin-top: 16px;">Sign-up</button>
                     <div></div>
                 </form>
             </div>
             <div class="modal-footer justify-content-end" style="text-align: left;">
-                <div style="margin-bottom: 8px;margin-top: 8px;text-align: right;"><label class="form-label"
-                        style="margin-right: 14px;padding-right: 15px;">Already have an
-                        account?</label><button id="goto-signin" class="btn btn-outline-secondary" type
-                        data-bs-target="#signin" data-bs-toggle="modal" data-bs-dismiss="modal">Go to
+                <div style="margin-bottom: 8px;margin-top: 8px;text-align: right;"><label class="form-label" style="margin-right: 14px;padding-right: 15px;">Already have an
+                        account?</label><button id="goto-signin" class="btn btn-outline-secondary" type data-bs-target="#signin" data-bs-toggle="modal" data-bs-dismiss="modal">Go to
                         Sign-in</button></div>
             </div>
         </div>
