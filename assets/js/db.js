@@ -1,11 +1,11 @@
 function readDB() {
-    $.getJSON('/assets/database/index.json', function (data) {
+    $.getJSON('https://raw.githubusercontent.com/WandaaBudiono/WandaaBudiono.github.io/refs/heads/main/assets/database/index.json', function (data) {
         db = {};
         let files = data.files;
 
         $.each(files, (key, name) => {
             let key = name.split('.')[0];
-            $.getJSON(`/assets/database/${name}.json`, (data) => db[name] = data);
+            $.getJSON(`https://raw.githubusercontent.com/WandaaBudiono/WandaaBudiono.github.io/refs/heads/main/assets/database/${name}.json`, (data) => db[name] = data);
         });
     });
 }
