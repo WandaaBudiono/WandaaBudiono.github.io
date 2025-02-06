@@ -17,29 +17,12 @@ $("#navbar").load(`/Templates/navbar-admin.html`);
 $("#sidebar").load(`/Templates/sidebar-admin.html`);
 $("modals").load(`/Templates/modal-admin.html`);
 
-// window.addEventListener("DOMContentLoaded", () => {
-//     const navEntries = performance.getEntriesByType("navigation");
-//     if (navEntries.length > 0) {
-//         const navType = navEntries[0].type;
-
-//         if (navType === "reload" || navType === "navigate") {
-//             directAccess();
-//         }
-//     }
-// });
-
-// function directAccess() {
-//     let initialPage = window.location.pathname.replace("/", "").split('-')[0] || "index";
-//     loadPage(initialPage);
-// }
-
-
 function setActiveNav(page) {
     $(".nav-link").removeClass("active");
     $(`.nav-link[data-page="${page}"]`).addClass("active");
 }
 
-$(document).on("click", ".nav-link", function (e) {
+$(document).on("click", ".side", function (e) {
     e.preventDefault();
     let page = $(this).data("page");
 

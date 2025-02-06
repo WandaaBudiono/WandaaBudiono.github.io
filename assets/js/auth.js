@@ -74,11 +74,12 @@ $('#form_sign_up').on('submit', function (e) {
     } else console.log("Email sudah terdaftar. Silahkan login");
 })
 
-function logout() {
+$(document).on("click", "#logout", function (e) {
+    e.preventDefault();
     session.delete('user');
     loadPage('index');
     location.reload()
-}
+});
 
 function user(User) {
     User = JSON.parse(session.user()) ?? 'guest';

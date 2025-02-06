@@ -1,16 +1,16 @@
 function readDB() {
-    if (localStorage.length === 0) {
-        $.getJSON('https://raw.githubusercontent.com/WandaaBudiono/WandaaBudiono.github.io/refs/heads/main/assets/database/index.json', function (data) {
-            db = {};
-            let files = data.files;
-            $.each(files, (key, name) => {
+    $.getJSON('https://raw.githubusercontent.com/WandaaBudiono/WandaaBudiono.github.io/refs/heads/main/assets/database/index.json', function (data) {
+        db = {};
+        let files = data.files;
+        $.each(files, (key, name) => {
+            if (localStorage.length === 0) {
                 $.getJSON(`https://raw.githubusercontent.com/WandaaBudiono/WandaaBudiono.github.io/refs/heads/main/assets/database/${name}.json`, (data) => {
                     db[name] = data
                     localStorage[name] = JSON.stringify(data)
                 });
-            });
+            } else db[name] = JSON.parse(localStorage[name])
         });
-    }
+    });
 }
 
 function updateDB(key, item) {
