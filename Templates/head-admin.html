@@ -6,13 +6,6 @@
 <script>
     (function () {
 
-        let redirectPage = sessionStorage.getItem("redirectPage");
-
-        if (redirectPage) {
-            sessionStorage.removeItem("redirectPage");
-            loadPage(redirectPage);
-        }
-
         // JavaScript snippet handling Dark/Light mode switching
 
         const getStoredTheme = () => localStorage.getItem('theme');
@@ -91,12 +84,18 @@
         });
     })();
 </script>
+<script>
+    $(document).ready(function () {
+        let redirectPage = sessionStorage.getItem("redirectPage");
+
+        if (redirectPage) {
+            sessionStorage.removeItem("redirectPage");
+            loadPage(redirectPage);
+        }
+    });
+</script>
 <link rel="icon" type="image/png" sizes="400x400" href="/assets/img/hacktiv8-logo.png">
 <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
-<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap">
-<link rel="stylesheet" href="/assets/css/baguetteBox.min.css">
-<link rel="stylesheet" href="/assets/css/V3-Modal-Sign-up-and-Log-in-forms-BS-532.css">
-<link rel="stylesheet" href="/assets/css/vanilla-zoom.min.css">
+<link rel="stylesheet" href="/assets/bootstrap/css/bootstraps.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">

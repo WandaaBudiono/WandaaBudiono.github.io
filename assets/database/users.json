@@ -1,0 +1,23 @@
+{
+    "compek@dr.com": {
+        "name": "Compekiah Compek",
+        "email": "compek@dr.com",
+        "password": "CompuCompuan1234",
+        "role": "admin",
+        "sex": "male",
+        "picture": "/assets/img/avatars/avatar1.jpg",
+        "phone": "+62 812 3456 7890",
+        "address": "Jln. Cihampelas Raya, No. 23, Kec. Cikarang Barat, Kota Bekasi, Jawa Barat 17510"
+    },
+    "compu@dr.com": {
+        "name": "Compek Compekiah",
+        "email": "compu@dr.com",
+        "password": "CompekCompekan1234",
+        "role": "customer",
+        "sex": "male",
+        "picture": "/assets/img/avatars/avatar1.jpg",
+        "phone": "+62 812 3456 7891",
+        "address": "666, Jl. Tanah Kusir IV No.75, RT.5/RW.9, South Kebayoran Lama, Kebayoran Lama, South Jakarta City, Jakarta 12240",
+        "cart": []
+    }
+}
