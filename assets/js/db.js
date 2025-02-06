@@ -1,8 +1,8 @@
 function readDB() {
-    $.getJSON('/assets/database/', function (data) {
+    $.getJSON('./assets/database/', function (data) {
         db = {}
         $.each(data, (key, name) => {
-            db[name.split('.')[0]] = $.getJSON(`/assets/database/${name}`, (data) => db[name.split('.')[0]] = data)
+            db[name.split('.')[0]] = $.getJSON(`./assets/database/${name}`, (data) => db[name.split('.')[0]] = data)
         });
     })
 }
