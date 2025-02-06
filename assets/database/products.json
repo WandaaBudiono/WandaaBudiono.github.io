@@ -1,10 +1,42 @@
 {
-    "paramex": {
-        "name": "Paramex",
-        "price": 2000000,
-        "image": "/assets/img/hacktiv8-logo.png",
-        "description": "A powerful and advanced drug that can disrupt the normal functioning of the body, causing severe symptoms.",
-        "quantity": 5000,
-        "manufacturer": "Drug XYZ Corp."
-    }
+  "paramex": {
+    "name": "Paramex",
+    "price": 2000000,
+    "image": "/assets/img/hacktiv8-logo.png",
+    "description": "A powerful and advanced drug that can disrupt the normal functioning of the body, causing severe symptoms.",
+    "quantity": 5000,
+    "function": "obat pusing;obat batuk"
+  },
+  "panadol": {
+    "name": "Panadol",
+    "price": 1500000,
+    "image": "/assets/img/hacktiv8-logo.png",
+    "description": "A common pain reliever and fever reducer.",
+    "quantity": 3000,
+    "function": "obat sakit kepala;obat demam"
+  },
+  "promag": {
+    "name": "Promag",
+    "price": 1500000,
+    "image": "/assets/img/hacktiv8-logo.png",
+    "description": "A common pain reliever and fever reducer.",
+    "quantity": 3000,
+    "function": "obat maag;obat mual"
+  },
+  "amoxilin": {
+    "name": "Amoxilin",
+    "price": 1500000,
+    "image": "/assets/img/hacktiv8-logo.png",
+    "description": "A common pain reliever and fever reducer.",
+    "quantity": 3000,
+    "function": "Obat gatal"
+  },
+  "sangobion": {
+    "name": "Sangobion",
+    "price": 1500000,
+    "image": "/assets/img/hacktiv8-logo.png",
+    "description": "A common pain reliever and fever reducer.",
+    "quantity": 3000,
+    "function": "obat tambah darah"
+  }
 }
