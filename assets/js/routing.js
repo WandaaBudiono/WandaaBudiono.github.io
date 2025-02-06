@@ -9,7 +9,7 @@ function loadPage(page) {
             $("main.page").fadeIn(200);
         });
     });
-    $('main.page').style('opacity', 1)
+    $('main.page').css('opacity', '')
     setActiveNav(page);
     $("scrip").load(`Templates/scrip.html`);
 }
