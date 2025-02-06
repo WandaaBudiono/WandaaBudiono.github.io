@@ -1,22 +1,23 @@
 function readDB() {
-    $.getJSON('https://raw.githubusercontent.com/WandaaBudiono/WandaaBudiono.github.io/refs/heads/main/assets/database/index.json', function (data) {
-        db = {};
-        let files = data.files;
-        console.log(files);
-
-        $.each(files, (key, name) => {
-            $.getJSON(`https://raw.githubusercontent.com/WandaaBudiono/WandaaBudiono.github.io/refs/heads/main/assets/database/${name}.json`, (data) => db[name] = data);
+    if (localStorage.length === 0) {
+        $.getJSON('https://raw.githubusercontent.com/WandaaBudiono/WandaaBudiono.github.io/refs/heads/main/assets/database/index.json', function (data) {
+            db = {};
+            let files = data.files;
+            $.each(files, (key, name) => {
+                $.getJSON(`https://raw.githubusercontent.com/WandaaBudiono/WandaaBudiono.github.io/refs/heads/main/assets/database/${name}.json`, (data) => {
+                    db[name] = data
+                    localStorage[name] = JSON.stringify(data)
+                });
+            });
         });
-        console.log(db);
-
-    });
+    }
 }
 
 function updateDB(key, item) {
     if (key && item) {
         localStorage[key] = JSON.stringify(item);
     } else {
-        $(db).each((key, db) => localStorage[key] = JSON.stringify(db));
+        $.each(db, (key, db) => localStorage[key] = JSON.stringify(db));
     }
 }
 
