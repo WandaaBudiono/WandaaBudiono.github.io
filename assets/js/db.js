@@ -3,7 +3,7 @@ function readDB() {
         db = {};
         let files = data.files;
         $.each(files, (key, name) => {
-            if (localStorage.length === 0) {
+            if (!localStorage[name]) {
                 $.getJSON(`https://raw.githubusercontent.com/WandaaBudiono/WandaaBudiono.github.io/refs/heads/main/assets/database/${name}.json`, (data) => {
                     db[name] = data
                     localStorage[name] = JSON.stringify(data)

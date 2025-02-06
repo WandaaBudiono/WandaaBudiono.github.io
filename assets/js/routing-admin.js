@@ -6,14 +6,20 @@ function loadPage(page) {
                 $("#isian").load(`Views/Admin/404.html`);
             }
             $("#isian").fadeIn(200);
+            $("#navbar").load(`/Templates/navbar-admin.html`);
+            $("scrip").load(`/Templates/scrip-admin.html`, () => {
+                if (page === 'index') {
+                    $('.chart-area').each(function () {
+                        $().initChart(db.charts[this.id]);
+                    })
+                }
+            });
         });
     });
     history.pushState({ page: page }, "", `/${page}`.replace('index', ''));
-    $("scrip").load(`/Templates/scrip-admin.html`);
     setActiveNav(page);
 }
 
-$("#navbar").load(`/Templates/navbar-admin.html`);
 $("#sidebar").load(`/Templates/sidebar-admin.html`);
 $("modals").load(`/Templates/modal-admin.html`);
 
