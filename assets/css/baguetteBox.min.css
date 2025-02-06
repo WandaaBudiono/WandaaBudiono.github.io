@@ -229,3 +229,7 @@
 .clean-product-item .product-name a {
   color: var(--bs-body-color);
 }
+
+main.page {
+  opacity: 1 !important;
+}
