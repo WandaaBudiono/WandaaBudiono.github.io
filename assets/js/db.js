@@ -4,7 +4,6 @@ function readDB() {
         let files = data.files;
 
         $.each(files, (key, name) => {
-            let key = name.split('.')[0];
             $.getJSON(`https://raw.githubusercontent.com/WandaaBudiono/WandaaBudiono.github.io/refs/heads/main/assets/database/${name}.json`, (data) => db[name] = data);
         });
     });
