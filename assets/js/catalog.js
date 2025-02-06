@@ -1,35 +1,20 @@
 $(document).ready(function () {
-  let products = [
-    {
-      id: 1,
-      name: "paracetamol",
-      image: "./assets/img/tech/image2.jpg",
-      price: 1000,
-    },
-    {
-      id: 2,
-      name: "promag",
-      image: "./assets/img/tech/image2.jpg",
-      price: 1000,
-    },
-    {
-      id: 3,
-      name: "sangobion",
-      image: "./assets/img/tech/image2.jpg",
-      price: 1000,
-    },
-    {
-      id: 4,
-      name: "paracetamol",
-      image: "./assets/img/tech/image2.jpg",
-      price: 1000,
-    },
-  ];
-
   function loadProduct() {
     let productList = $("#productList");
     productList.empty();
-    $.each(products, function (index, product) {
+
+    $(".product-item").each(function () {
+      let product = {
+        name: $(this).find(".product-name").text().trim(),
+        image: $(this).find("img").attr("src"),
+        price: $(this)
+          .find(".price")
+          .text()
+          .trim()
+          .replace("Rp ", "")
+          .replace(/\./g, ""),
+      };
+
       let itemProduct = `
         <div class="col-12 col-md-6 col-lg-4 mb-4">
           <div class="card border-light-subtle clean-product-item">
@@ -53,12 +38,13 @@ $(document).ready(function () {
                   <img src="../../assets/img/star-empty.svg" />
                 </div>
                 <div class="price text-success fw-bold">
-                  Rp ${product.price.toLocaleString("id-ID")}
+                  Rp ${parseInt(product.price).toLocaleString("id-ID")}
                 </div>
               </div>
             </div>
           </div>
         </div>`;
+
       productList.append(itemProduct);
     });
   }
