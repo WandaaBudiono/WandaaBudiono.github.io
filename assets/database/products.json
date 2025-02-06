@@ -1,0 +1,10 @@
+{
+  "paramex": {
+    "name": "Paracetamol",
+    "price": 25000,
+    "image": "/assets/img/paracetamol",
+    "description": "A powerful and advanced drug that can disrupt the normal functioning of the body, causing severe symptoms.",
+    "quantity": 5000,
+    "manufacturer": "Drug XYZ Corp."
+  }
+}
