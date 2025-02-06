@@ -2,7 +2,7 @@
 <script src="/assets/js/bs-init.js"></script>
 <script src="/assets/js/theme-admin.js"></script>
 <script>
-    $.fn.initChart = (data) => {
+    $.fn.initChart = (id, data) => {
         let ctx = document.getElementById(id).getContext("2d");
         new Chart(ctx, data);
     }

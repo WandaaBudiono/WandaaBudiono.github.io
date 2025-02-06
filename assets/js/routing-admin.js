@@ -10,7 +10,7 @@ function loadPage(page) {
             $("scrip").load(`/Templates/scrip-admin.html`, () => {
                 if (page === 'index') {
                     $('.chart-area').each(function () {
-                        $().initChart(db.charts[this.id]);
+                        $().initChart(this.id, db.charts[this.id]);
                     })
                 }
             });
