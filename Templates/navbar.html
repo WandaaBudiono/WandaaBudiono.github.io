@@ -10,8 +10,14 @@
                 <li class="nav-item"><a class="nav-link" data-page="shopping-cart" href="#">Shopping Cart</a></li>
                 <li class="nav-item"><a class="nav-link" data-page="about-us" href="#">About Us</a></li>
                 <li class="nav-item"><a class="nav-link" data-page="contact-us" href="#">Contact Us</a></li>
-                <li><button class="btn btn-primary" type="button" style="margin-left: 6px;" data-bs-target="#signin" data-bs-toggle="modal">Log-in</button></li>
-                <li><button class="btn btn-primary" type="button" data-bs-target="#signup" data-bs-toggle="modal" style="margin-right: 6px;">Register</button></li>
+                <li id="auth-buttons">
+                    <button class="btn btn-primary" id="login-btn" type="button" style="margin-left: 6px" data-bs-target="#signin" data-bs-toggle="modal">
+                        Log-in
+                    </button>
+                    <button class="btn btn-primary" id="register-btn" type="button" style="margin-right: 6px" data-bs-target="#signup" data-bs-toggle="modal">
+                        Register
+                    </button>
+                </li>
             </ul>
         </div>
     </div>
