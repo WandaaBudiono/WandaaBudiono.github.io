@@ -1,0 +1,42 @@
+{
+    "paramex": {
+        "name": "Paracetamol",
+        "price": 25000,
+        "image": "/assets/img/paracetamol.jpg",
+        "description": "golongan obat bebas dengan kategori obat penurun panas dan pereda nyeri (analgesic dan antipiretik) yang dapat digunakan oleh dewasa dan anak-anak.",
+        "quantity": 50,
+        "function": "sakit kepala;sakit gigi;nyeri haid; pegal-pegal"
+    },
+    "panadol": {
+        "name": "Panadol",
+        "price": 10000,
+        "image": "/assets/img/panadol.jpg",
+        "description": "obat yang bermanfaat untuk menurunkan demam serta meredakan nyeri, seperti sakit kepala, sakit gigi, atau sakit pada otot.",
+        "quantity": 50,
+        "function": "obat sakit kepala;obat demam"
+    },
+    "promag": {
+        "name": "Promag",
+        "price": 15000,
+        "image": "/assets/img/promag.png",
+        "description": "Obat dengan kandungan hydrotalcite, magnesium hidroksida dan simethicone untuk meringankan gejala akibat kelebihan asam lambung.",
+        "quantity": 50,
+        "function": "obat maag;obat mual"
+    },
+    "amoxilin": {
+        "name": "Amoxilin",
+        "price": 50000,
+        "image": "/assets/img/amoxilin.jpg",
+        "description": "Obat antibiotik yang digunakan untuk mengatasi berbagai penyakit akibat infeksi bakteri, seperti infeksi telinga, tonsilitis, atau bronkitis.",
+        "quantity": 50,
+        "function": "Obat gatal"
+    },
+    "sangobion": {
+        "name": "Sangobion",
+        "price": 35000,
+        "image": "/assets/img/sangobion.jpg",
+        "description": "produk suplemen yang umumnya mengandung kombinasi zat besi, vitamin C, vitamin B12, dan asam folat.",
+        "quantity": 50,
+        "function": "obat tambah darah"
+    }
+}
