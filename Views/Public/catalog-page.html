@@ -1,29 +1,23 @@
 <section class="clean-block clean-catalog dark">
-  <div class="container">
-    <div class="block-heading">
-      <h2 class="text-info">Catalog Page</h2>
-      <p>
-        Apotek menjadi tujuan bagi setiap individu yang membutuhkan berbagai
-        jenis obat-obatan sesuai dengan kebutuhannya. Di setiap daerah sendiri
-        ada lebih dari satu apotek yang bisa didatangi untuk menebus atau
-        membeli obat yang sedang dibutuhkan.
-      </p>
+    <div class="container">
+        <div class="block-heading">
+            <h2 class="text-info">Catalog Page</h2>
+            <p>
+                Apotek menjadi tujuan bagi setiap individu yang membutuhkan berbagai
+                jenis obat-obatan sesuai dengan kebutuhannya. Di setiap daerah sendiri
+                ada lebih dari satu apotek yang bisa didatangi untuk menebus atau
+                membeli obat yang sedang dibutuhkan.
+            </p>
+        </div>
+        <!-- Tambahkan fitur pencarian -->
+        <div class="mb-4">
+            <input type="text" id="searchInput" class="form-control" placeholder="Cari produk..." />
+        </div>
+        <div class="content">
+            <div class="row" id="productList">
+                <!-- Produk akan dimuat di sini secara dinamis oleh JavaScript -->
+            </div>
+        </div>
     </div>
-    <!-- Tambahkan fitur pencarian -->
-    <div class="mb-4">
-      <input
-        type="text"
-        id="searchInput"
-        class="form-control"
-        placeholder="Cari produk..."
-      />
-    </div>
-    <div class="content">
-      <div class="row" id="productList">
-        <!-- Produk akan dimuat di sini secara dinamis oleh JavaScript -->
-      </div>
-    </div>
-  </div>
 </section>
-
 <script src="../../assets/js/catalog.js"></script>

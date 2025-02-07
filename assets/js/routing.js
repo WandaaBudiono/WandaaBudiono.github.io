@@ -4,14 +4,16 @@ function loadPage(page) {
         $("main.page").load(`Views/Public/${page}.html`, function (response, status) {
 
             if (status === "error") {
+                page === undefined || page === 'undefined' ? page = 'index' : undefined
                 window.location.href = "/404.html?redirect=" + page;
             }
             $("main.page").fadeIn(200);
         });
     });
-    $('main.page').css('opacity', '')
     setActiveNav(page);
-    $("scrip").load(`Templates/scrip.html`);
+    $("scrip").load(`Templates/scrip.html`, (response, status) => {
+        // loadProduct()
+    });
 }
 
 $("navbar").load(`Templates/navbar.html`, function () {

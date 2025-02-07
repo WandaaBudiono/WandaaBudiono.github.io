@@ -1,9 +1,9 @@
 session = {
     create: function (name, value, days) {
-        var expires;
+        let expires;
 
         if (days) {
-            var date = new Date();
+            let date = new Date();
             date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
             expires = "; expires=" + date.toGMTString();
         } else {
@@ -12,10 +12,10 @@ session = {
         document.cookie = encodeURIComponent(name) + "=" + encodeURIComponent(value) + expires + "; path=/";
     },
     read: function (name) {
-        var nameEQ = encodeURIComponent(name) + "=";
-        var ca = document.cookie.split(';');
-        for (var i = 0; i < ca.length; i++) {
-            var c = ca[i];
+        let nameEQ = encodeURIComponent(name) + "=";
+        let ca = document.cookie.split(';');
+        for (let i = 0; i < ca.length; i++) {
+            let c = ca[i];
             while (c.charAt(0) === ' ')
                 c = c.substring(1, c.length);
             if (c.indexOf(nameEQ) === 0)
@@ -76,7 +76,10 @@ $('#form_sign_up').on('submit', function (e) {
 
 $(document).on("click", "#logout", function (e) {
     e.preventDefault();
+    user.update()
+    db.users[user.getEmail()] = JSON.parse(session.user())
     session.delete('user');
+    updateDB()
     loadPage('index');
     location.reload()
 });
@@ -112,14 +115,17 @@ function user(User) {
         return User.password;
     }
 
-    function updateUser() {
-        User.name = $("#nama").val();
-        User.address = $("#alamat").val();
-        User.email = $("#email").val();
-        User.password = $("#password").val();
-        User.picture = $("#profilePic").val().split("\\").pop();
+    function getCart() {
+        return User.cart;
+    }
+
+    function update() {
+        // User.name = $("#nama").val();
+        // User.address = $("#alamat").val();
+        // User.email = $("#email").val();
+        // User.password = $("#password").val();
+        // User.picture = $("#profilePic").val().split("\\").pop();
         session.create('user', JSON.stringify(User), 1);
-        console.log(session.user());
     }
 
     user.getRole = getRole;
@@ -129,7 +135,8 @@ function user(User) {
     user.getSex = getSex;
     user.getPicture = getPicture;
     user.getPassword = getPassword;
-    user.updateUser = updateUser;
+    user.getCart = getCart;
+    user.update = update;
 }
 
 user()
